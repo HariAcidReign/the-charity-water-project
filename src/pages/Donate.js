@@ -47,7 +47,7 @@ function Donate() {
 												<label
 													className="block mb-1 text-sm font-medium text-gray-800"
 													htmlFor="ccnumber">
-													Credit Card Number
+													Credit Card Details
 												</label>
 											</div>
 											<input
@@ -90,23 +90,33 @@ function Donate() {
 										</div>
 									</div>
 
+                                    <div className="flex flex-wrap mb-4 -mx-3">
+										<div className="w-full px-3">
+											<label
+												className="block mb-1 text-sm font-medium text-gray-800"
+												htmlFor="amount">
+												Amount (USD)
+											</label>
+											<input
+												id="amount"
+												type="number"
+                                                min="5"
+                                                step="5"
+												className="w-full text-gray-800 form-input"
+												placeholder="Enter amount"
+												required
+											/>
+										</div>
+									</div>
+
 									<div className="flex flex-wrap mt-6 -mx-3">
 										<div className="w-full px-3">
 											<button className="w-full text-white bg-blue-600 btn hover:bg-blue-700">
-												Sign in
+												Donate
 											</button>
 										</div>
 									</div>
 								</form>
-
-								<div className="mt-6 text-center text-gray-600">
-									Don’t you have an account?{' '}
-									<Link
-										to="/signup"
-										className="text-blue-600 transition duration-150 ease-in-out hover:underline">
-										Sign up
-									</Link>
-								</div>
 							</div>
 						</div>
 					</div>
