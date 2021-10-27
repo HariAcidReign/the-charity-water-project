@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Header from '../partials/Header';
 
-function SignIn() {
+function Donate() {
 	return (
 		<div className="flex flex-col min-h-screen overflow-hidden">
 			{/*  Site header */}
@@ -16,8 +16,9 @@ function SignIn() {
 						<div className="pt-32 pb-12 md:pt-40 md:pb-20">
 							{/* Page header */}
 							<div className="max-w-3xl pb-12 mx-auto text-center md:pb-20">
-								<h1 className="h1">
-									Welcome back. We exist to make human lives easier.
+								<h1 className="h2">
+									Help bring clean and safe water to every person on the planet.
+									Donate today.
 								</h1>
 							</div>
 
@@ -28,14 +29,14 @@ function SignIn() {
 										<div className="w-full px-3">
 											<label
 												className="block mb-1 text-sm font-medium text-gray-800"
-												htmlFor="email">
-												Email
+												htmlFor="name">
+												Name
 											</label>
 											<input
-												id="email"
-												type="email"
+												id="name"
+												type="text"
 												className="w-full text-gray-800 form-input"
-												placeholder="Enter your email address"
+												placeholder="Enter your name as on credit card"
 												required
 											/>
 										</div>
@@ -45,36 +46,50 @@ function SignIn() {
 											<div className="flex justify-between">
 												<label
 													className="block mb-1 text-sm font-medium text-gray-800"
-													htmlFor="password">
-													Password
+													htmlFor="ccnumber">
+													Credit Card Number
 												</label>
-												<Link
-													to="reset-password"
-													className="text-sm font-medium text-blue-600 hover:underline">
-													Having trouble signing in?
-												</Link>
 											</div>
 											<input
-												id="password"
-												type="password"
+												id="ccnumber"
+												type="number"
 												className="w-full text-gray-800 form-input"
-												placeholder="Enter your password"
+												placeholder="16 digit number"
 												required
 											/>
 										</div>
 									</div>
-									<div className="flex flex-wrap mb-4 -mx-3">
-										<div className="w-full px-3">
-											<div className="flex justify-between">
-												<label className="flex items-center">
-													<input type="checkbox" className="form-checkbox" />
-													<span className="ml-2 text-gray-600">
-														Keep me signed in
-													</span>
-												</label>
-											</div>
+
+									<div class="mb-3 -mx-2 flex items-end">
+										<div class="px-2 w-1/3 justify-between">
+											<input
+												class="w-32 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
+												placeholder="mm"
+												type="number"
+												min="01"
+												max="12"
+											/>
+										</div>
+										<div class="px-2 w-1/3">
+											<input
+												class="w-32 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
+												placeholder="yyyy"
+												type="number"
+												min="2000"
+												max="3000"
+											/>
+										</div>
+										<div class="px-2 w-1/3">
+											<input
+												class="w-32 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
+												placeholder="CVV"
+												type="number"
+												min="000"
+												max="999"
+											/>
 										</div>
 									</div>
+
 									<div className="flex flex-wrap mt-6 -mx-3">
 										<div className="w-full px-3">
 											<button className="w-full text-white bg-blue-600 btn hover:bg-blue-700">
@@ -83,7 +98,7 @@ function SignIn() {
 										</div>
 									</div>
 								</form>
-							
+
 								<div className="mt-6 text-center text-gray-600">
 									Don’t you have an account?{' '}
 									<Link
@@ -101,4 +116,4 @@ function SignIn() {
 	);
 }
 
-export default SignIn;
+export default Donate;
