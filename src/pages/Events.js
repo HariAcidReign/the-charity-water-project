@@ -27,7 +27,72 @@ function Events() {
 								</h4>
 							</div>
 							{/* Event Cards */}
-							
+							<div class="flex flex-col items-center justify-center gap-5 p-4 antialiased bg-gradient-to-b from-gray-100 to-white md:p-0">
+								<div class="flex w-full overflow-hidden text-gray-900 bg-white rounded-lg shadow-lg md:max-w-3xl">
+									<img
+										src="https://pbs.twimg.com/profile_images/1617782147/Committee_Arizona_400x400.png"
+										alt="event-one"
+										class="hidden object-cover w-2/6 select-none sm:block"
+									/>
+									<div class="flex flex-col justify-between w-full p-5">
+										<div class="mb-10 break-all">
+											<h2 class="mb-3 text-xl font-black leading-tight md:text-2xl md:leading-none">
+												Arizona Committee Pints for People
+											</h2>
+											<p class="leading-relaxed text-gray-700 lg:max-w-md md:truncate">
+												Meet experts in the field on how you can volunteer and
+												<br class="hidden md:block" />
+												make a change in the water crisis in Arizona, USA.
+												<br />
+												<em>Location: </em>201 E. Main St. Phoenix, AZ
+											</p>
+										</div>
+
+										<div class="grid w-full grid-flow-row-dense grid-cols-2 gap-3 md:grid-cols-3">
+											<button class="col-start-2 col-end-4 py-1 font-bold text-white bg-gray-500 rounded-lg md:col-start-3 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline">
+												Register
+											</button>
+											<span class="self-end font-semibold leading-none text-gray-500">
+												November 4 from 4:00 pm to 7:30 pm
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex w-full overflow-hidden text-gray-900 bg-white rounded-lg shadow-lg md:max-w-3xl">
+									<img
+										src="https://wateractionhub.org/media/CACHE/images/projects/2018/07/08/WaterAid-logo_0jwm74q/43a4a53c9f1d84708fe4602d2eb45768.jpg"
+										alt="event-two"
+										class="hidden object-cover w-2/6 select-none sm:block"
+									/>
+									<div class="flex flex-col justify-between w-full p-5">
+										<div class="mb-10 break-all">
+											<h2 class="mb-3 text-xl font-black leading-tight md:text-2xl md:leading-none">
+												Water Aid Committee Meetup
+											</h2>
+											<p class="leading-relaxed text-gray-700 lg:max-w-md md:truncate">
+												Let us talk about how our work can make a difference
+												<br class="hidden md:block" />
+												in the parched regions of Africa.
+												<br />
+												<em>Location: </em>609 G. West Side Boulevard, New York,
+												NY
+											</p>
+										</div>
+
+										<div class="grid w-full grid-flow-row-dense grid-cols-2 gap-3 md:grid-cols-3">
+											<button class="col-start-2 col-end-4 py-1 font-bold text-white bg-gray-500 rounded-lg md:col-start-3 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline">
+												Register
+											</button>
+											<span class="self-end font-semibold leading-none text-gray-500">
+												December 10 from 3:00 pm to 8 pm
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							{/* end */}
 						</div>
 					</div>
 				</section>
