@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// DO THIS TO LINK BUTTON TO A PAGE
+import { useHistory } from 'react-router-dom';
 
 import Header from '../partials/Header';
 
 function Events() {
+	let history = useHistory();
 	return (
 		<div className="flex flex-col min-h-screen overflow-hidden">
 			{/*  Site header */}
@@ -49,7 +52,11 @@ function Events() {
 										</div>
 
 										<div class="grid w-full grid-flow-row-dense grid-cols-2 gap-3 md:grid-cols-3">
-											<button class="col-start-2 col-end-4 py-1 font-bold text-white bg-gray-500 rounded-lg md:col-start-3 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline">
+											<button
+												onClick={() => {
+													history.push('/register');
+												}}
+												class="col-start-2 col-end-4 py-1 font-bold text-white bg-gray-500 rounded-lg md:col-start-3 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline">
 												Register
 											</button>
 											<span class="self-end font-semibold leading-none text-gray-500">
@@ -81,7 +88,11 @@ function Events() {
 										</div>
 
 										<div class="grid w-full grid-flow-row-dense grid-cols-2 gap-3 md:grid-cols-3">
-											<button class="col-start-2 col-end-4 py-1 font-bold text-white bg-gray-500 rounded-lg md:col-start-3 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline">
+											<button
+												onClick={() => {
+													history.push('/register');
+												}}
+												class="col-start-2 col-end-4 py-1 font-bold text-white bg-gray-500 rounded-lg md:col-start-3 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline">
 												Register
 											</button>
 											<span class="self-end font-semibold leading-none text-gray-500">

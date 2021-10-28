@@ -12,6 +12,7 @@ import SignUp from './pages/SignUp';
 import Donate from './pages/Donate';
 import ResetPassword from './pages/ResetPassword';
 import Events from './pages/Events';
+import Register from './pages/Register';
 
 function App() {
 	const location = useLocation();
@@ -52,6 +53,9 @@ function App() {
 				</Route>
 				<Route path="/events">
 					<Events />
+				</Route>
+				<Route path="/register">
+					<Register />
 				</Route>
 			</Switch>
 		</>
