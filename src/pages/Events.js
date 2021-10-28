@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// DO THIS TO LINK BUTTON TO A PAGE
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'; // IMPORT THIS TO LINK BUTTON TO A PAGE
 
 import Header from '../partials/Header';
 
 function Events() {
-	let history = useHistory();
+	let history = useHistory(); // IMPORT THIS TO LINK BUTTON TO A PAGE
 	return (
 		<div className="flex flex-col min-h-screen overflow-hidden">
 			{/*  Site header */}
@@ -54,8 +53,9 @@ function Events() {
 										<div class="grid w-full grid-flow-row-dense grid-cols-2 gap-3 md:grid-cols-3">
 											<button
 												onClick={() => {
-													history.push('/register');
+													history.push('/register'); 
 												}}
+												// THIS BUTTON IS NOW LINKED TO A PAGE
 												class="col-start-2 col-end-4 py-1 font-bold text-white bg-gray-500 rounded-lg md:col-start-3 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:shadow-outline">
 												Register
 											</button>
