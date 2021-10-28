@@ -66,7 +66,7 @@ function Header() {
 								<Link
 									to="/signup"
 									className="ml-3 text-gray-200 bg-gray-900 btn-sm hover:bg-gray-800">
-									<span>Sign up</span>
+									<span>Register</span>
 									<svg
 										className="flex-shrink-0 w-3 h-3 ml-2 -mr-1 text-gray-400 fill-current"
 										viewBox="0 0 12 12"

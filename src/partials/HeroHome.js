@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Modal from '../utils/Modal';
 import { Link } from 'react-router-dom';
 
-
 function HeroHome() {
 	const [videoModalOpen, setVideoModalOpen] = useState(false);
 
@@ -70,11 +69,11 @@ function HeroHome() {
 									</Link>
 								</div>
 								<div>
-									<a
-										className="w-full text-white bg-gray-900 btn hover:bg-gray-800 sm:w-auto sm:ml-4"
-										href="#0">
+									<Link
+										to="/events"
+										className="w-full text-white bg-gray-900 btn hover:bg-gray-800 sm:w-auto sm:ml-4">
 										Events
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>

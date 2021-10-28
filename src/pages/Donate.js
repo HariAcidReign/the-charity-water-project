@@ -55,6 +55,8 @@ function Donate() {
 												type="number"
 												className="w-full text-gray-800 form-input"
 												placeholder="16 digit number"
+												min="00000000000000000"
+												max="9999999999999999"
 												required
 											/>
 										</div>
@@ -79,7 +81,7 @@ function Donate() {
 												max="3000"
 											/>
 										</div>
-										<div class="px-2 w-1/3">
+										<div class="px-1 w-1/3">
 											<input
 												class="w-32 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
 												placeholder="CVV"
@@ -90,7 +92,7 @@ function Donate() {
 										</div>
 									</div>
 
-                                    <div className="flex flex-wrap mb-4 -mx-3">
+									<div className="flex flex-wrap mb-4 -mx-3">
 										<div className="w-full px-3">
 											<label
 												className="block mb-1 text-sm font-medium text-gray-800"
@@ -100,8 +102,8 @@ function Donate() {
 											<input
 												id="amount"
 												type="number"
-                                                min="5"
-                                                step="5"
+												min="5"
+												step="5"
 												className="w-full text-gray-800 form-input"
 												placeholder="Enter amount"
 												required
